@@ -1,1 +1,30 @@
-<p>inicio works!</p>
+<!-- inicio.component.html -->
+<div class="inicio-container">
+    <!-- Sección de luz parpadeante y frase -->
+    <div class="section-light">
+      <div class="blinking-light"></div>
+      <p class="disponible">¡Disponible para trabajar!</p>
+    </div>
+  
+    <!-- Sección de nombre y cargo -->
+    <div class="section-name">
+      <h1>Mi Nombre</h1>
+      <p>Desarrolladora Web</p>
+    </div>
+  
+    <!-- Botón para descargar CV -->
+    <div class="section-cv">
+      <button (click)="descargarCV()">Descargar CV</button>
+    </div>
+  
+    <!-- Sección de tecnologías -->
+    <div class="section-tecnologias">
+      <h2>Tecnologías que utilizo</h2>
+      <div class="tech-icons">
+        <img src="tech-logo1.png" alt="Logo 1" class="tech-icon">
+        <img src="tech-logo2.png" alt="Logo 2" class="tech-icon">
+        <!-- Añadir más logos aquí -->
+      </div>
+    </div>
+  </div>
+  

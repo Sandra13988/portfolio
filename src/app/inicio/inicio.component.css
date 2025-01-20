@@ -1,0 +1,66 @@
+/* inicio.component.css */
+.inicio-container {
+    padding: 40px;
+  }
+  
+  .section-light {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blinking-light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff0;
+    animation: blink 1s infinite alternate;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .disponible {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff0;
+  }
+  
+  .section-name h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .section-cv button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .section-tecnologias {
+    text-align: center;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
