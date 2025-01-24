@@ -1,0 +1,103 @@
+/* Estilos para la sección 'Sobre mí' */
+.section-about {
+    
+    text-align: center;
+  }
+  
+  .section-about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor para el texto y la imagen */
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Asegura que en pantallas pequeñas se acomoden bien */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para el texto */
+  .about-text {
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .about-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para la imagen */
+  .about-image {
+    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+  }
+  
+
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /* Botones en la sección 'Sobre mí' */
+.about-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Espacio entre los botones */
+    justify-content: center;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  /* Estilo para el botón de LinkedIn */
+  .btn-linkedin {
+    background-color: #0077b5;
+    color: white;
+    border: 1px solid #0077b5;
+  }
+  
+  .btn-linkedin:hover {
+    background-color: white;
+    color: #0077b5;
+  }
+  
+  /* Estilo para el botón de GitHub */
+  .btn-github {
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+  }
+  
+  .btn-github:hover {
+    background-color: white;
+    color: #333;
+  }
+  

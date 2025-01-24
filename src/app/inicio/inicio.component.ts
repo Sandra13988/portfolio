@@ -11,9 +11,8 @@ export class InicioComponent {
 
   descargarCV() {
     const link = document.createElement('a');
-    link.href = 'assets/cv.pdf'; // Ruta del archivo CV en la carpeta "assets"
-    link.download = 'CV_Sandra.pdf'; // Nombre del archivo descargado
-    link.click();
+    link.href = 'assets/CV.pdf';
+    link.download = 'CV_Sandra.pdf'; 
   }
   
 }
