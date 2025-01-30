@@ -1,10 +1,7 @@
 /* inicio.component.css */
 
 
-.inicio-container {
-    padding: 20px;
-    
-  }
+
   
   .section-light {
     display: flex; /* Flexbox para alinear los elementos internos */
