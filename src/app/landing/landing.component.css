@@ -1,61 +1,74 @@
+.landing-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000; /* Para que esté por encima de todo */
+}
 
+/* Botonera */
+.button-container {
+  display: flex;
+  background-color: rgba(245, 73, 144, 1);
+  width: 90%;
+  max-width: 800px;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(245, 73, 144, 0.5) 5px 10px 15px;
+  padding: 10px;
+}
 
+/* Botones */
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 100px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
 
-/* Estilos para el encabezado fijo */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    z-index: 10; /* Asegura que el encabezado esté encima del contenido */
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar li {
-    margin: 0 20px;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Espacio superior para las secciones debido al navbar fijo */
+.button:hover {
+  transform: translateY(-3px);
+}
+
+/* Quitamos subrayado de los enlaces */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
   .landing-container {
-    padding-top: 60px; /* Ajustar según el tamaño del encabezado */
+      width: 100%;
   }
-  
-  .section {
-    padding: 20px 20px; /* Espaciado dentro de cada sección */
-   
-    border-bottom: 1px solid #ccc;
+
+  .button-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding: 10px;
   }
-  
-  .section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+  .button {
+      width: 90px;
+      height: 35px;
+      font-size: 12px;
+      margin: 5px;
   }
-  
-  .section p {
-    font-size: 1rem;
-  }
-  
-  /* Estilos para el comportamiento de desplazamiento */
-  html {
-    scroll-behavior: smooth;
-  }
-  
+}

@@ -1,33 +1,60 @@
-<!-- app.component.html -->
+<!-- app.component.html 
 <div class="navbar">
-    <ul>
-      <li><a href="#inicio" routerLink="inicio" routerLinkActive="active">Inicio</a></li>
-      <li><a href="#sobre-mi" routerLink="sobre-mi" routerLinkActive="active">Sobre Mí</a></li>
-      <li><a href="#proyectos" routerLink="proyectos" routerLinkActive="active">Proyectos</a></li>
-      <li><a href="#experiencia" routerLink="experiencia" routerLinkActive="active">Experiencia</a></li>
-      <li><a href="#contacto" routerLink="contacto" routerLinkActive="active">Contacto</a></li>
-    </ul>
+  <ul>
+    <a href="#inicio" routerLink="inicio" routerLinkActive="active">Inicio</a></li>
+  </ul>
+</div>
+-->
+
+
+<div class="landing-container">
+  <div class="button-container">
+
+    <button class="button">
+      <a href="#inicio" routerLink="inicio" routerLinkActive="active">INICIO</a>
+    </button>
+
+    <button class="button">
+      <a href="#sobre-mi" routerLink="sobre-mi" routerLinkActive="active">SOBRE MI</a>
+    </button>
+
+    <button class="button">
+      <a href="#experiencia" routerLink="experiencia" routerLinkActive="active">EXPERIENCIA</a>
+    </button>
+
+    <button class="button">
+      <a href="#proyectos" routerLink="proyectos" routerLinkActive="active">PROYECTOS</a>
+    </button>
+
+    <button class="button">
+      <a href="#habilidades" routerLink="habilidades" routerLinkActive="active">HABILIDADES</a>
+    </button>
+
+    <button class="button">
+      <a href="#contacto" routerLink="contacto" routerLinkActive="active">CONTACTO</a>
+    </button>
   </div>
   
-  <div class="landing-container">
-    <div id="inicio" class="section">
-      <app-inicio/>
-    </div>
-  
-    <div id="sobre-mi" class="section">
-        <app-sobremi/>
-    </div>
-  
-    <div id="proyectos" class="section">
-        <app-proyectos/>
-    </div>
-  
-    <div id="experiencia" class="section">
-      <app-experiencia/>
-    </div>
-  
-    <div id="contacto" class="section">
-        <app-contacto/>
-    </div>
+
+</div>
+<div class="">
+  <div id="inicio" class="section">
+    <app-inicio />
   </div>
-  
+
+  <div id="sobre-mi" class="section">
+    <app-sobremi />
+  </div>
+
+  <div id="proyectos" class="section">
+    <app-proyectos />
+  </div>
+
+  <div id="experiencia" class="section">
+    <app-experiencia />
+  </div>
+
+  <div id="contacto" class="section">
+    <app-contacto />
+  </div>
+</div>
