@@ -59,7 +59,7 @@ h1 {
     }
   
     .cards .card {
-      width: 80%; /* Las tarjetas ocupan el 90% del ancho en pantallas pequeñas */
+      max-width: 80%; /* Las tarjetas ocupan el 90% del ancho en pantallas pequeñas */
        /* Altura automática para adaptarse al contenido */
       padding: 20px; /* Añade espacio interno para mejor legibilidad */
     }
