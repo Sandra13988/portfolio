@@ -39,65 +39,57 @@
   }
   
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #333;
   }
   
 
-  .tech-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .tech-icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-  }
+
   
   /* Botones en la sección 'Sobre mí' */
-.about-buttons {
-    margin-top: 20px;
+
+  
+  .about-buttons {
     display: flex;
-    gap: 15px; /* Espacio entre los botones */
+    gap: 20px; /* Espacio entre botones */
     justify-content: center;
+    margin-top: 40px;
   }
   
-  .btn {
+  .about-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaciado entre icono y texto */
+    padding: 15px 100px; /* Botones más grandes */
+    border-radius: 50px; /* Forma ovalada */
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block;
+    color: rgb(255, 255, 255); /* Color del texto */
+    border: 2px solid rgba(245, 73, 144, 1); /* Borde rosa */
+    background: transparent; /* Fondo transparente */
+    transition: all 0.3s ease;
   }
   
-  /* Estilo para el botón de LinkedIn */
-  .btn-linkedin {
-    background-color: #0077b5;
-    color: white;
-    border: 1px solid #0077b5;
+  .about-buttons a img {
+    width: 28px;
+    height: 28px;
   }
   
-  .btn-linkedin:hover {
-    background-color: white;
-    color: #0077b5;
+  .about-buttons a:hover {
+    background: rgba(245, 73, 144, 0.2); /* Efecto de fondo al pasar el mouse */
+    transform: scale(1.1); /* Ligero zoom */
   }
   
-  /* Estilo para el botón de GitHub */
-  .btn-github {
-    background-color: #333;
-    color: white;
-    border: 1px solid #333;
+
+  @media (max-width: 768px) {
+    .about-buttons {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de los botones a columna */
+        align-items: center; /* Centra los botones */
+        gap: 20px; /* Espaciado entre botones */
+    }
   }
-  
-  .btn-github:hover {
-    background-color: white;
-    color: #333;
-  }
-  
