@@ -1,16 +1,19 @@
 /* From Uiverse.io by Sashank02 */ 
 .titulo{
+    padding-top: 100px;
     text-align: center;
 }
-.cards{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas de igual tamaño */
+    gap: 30px; /* Espacio entre los elementos de la cuadrícula */
+  }
+  
 .card {
     padding: 20px;
     width: 330px;
-    min-height: 370px;
+    min-height: 200px;
     border-radius: 20px;
     background: #212121;
     box-shadow: 5px 5px 8px rgba(245, 73, 144, 1),
@@ -25,18 +28,11 @@
   .card-title {
     font-size: 18px;
     font-weight: 600;
-    color: #b2eccf;
+    color: #ffffff;
     margin: 15px 0 0 10px;
   }
   
-  .card-image {
-    min-height: 170px;
-    background-color: #313131;
-    border-radius: 15px;
-    background: #313131;
-    box-shadow: inset 5px 5px 3px #2f2f2f,
-              inset -5px -5px 3px #333333;
-  }
+ 
   
   .card-body {
     margin: 13px 0 0 10px;
