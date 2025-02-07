@@ -1,8 +1,5 @@
 /* inicio.component.css */
 
-
-
-  
   .section-light {
     display: flex; /* Flexbox para alinear los elementos internos */
     align-items: center; /* Alineación vertical */
@@ -44,15 +41,19 @@
     align-items: center;
   }
   
+  
   .section-tecnologias {
     text-align: center;
     padding-top: 30px;
   }
   
   .tech-icons {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Se ajusta automáticamente */
     gap: 20px;
+    justify-content: center;
+    max-width: 600px; /* Ajusta según necesites */
+    margin: 0 auto; /* Centrar */
   }
   
   .tech-icon {
@@ -60,6 +61,15 @@
     height: 50px;
     object-fit: contain;
   }
+  
+  @media (max-width: 600px) { /* En pantallas pequeñas */
+    .tech-icons {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      justify-content: center;
+      place-items: center;
+    }
+  }
+  
   
 
   /* From Uiverse.io by gharsh11032000 */ 
@@ -152,4 +162,27 @@
   width: 220px;
   height: 220px;
   opacity: 1;
+}
+
+
+.complete-name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espaciado entre nombres */
+  justify-content: center; /* Opcional: Centrar los nombres */
+}
+
+.complete-name h1 {
+  white-space: nowrap; /* Evita el salto de línea en pantallas grandes */
+  margin: 0;
+  -webkit-text-stroke: 1px rgba(245, 73, 144, 1); /* Borde del texto */
+}
+
+@media (max-width: 600px) { /* Ajusta el tamaño según necesites */
+  .complete-name {
+    margin-top: 35px;
+    flex-direction: column;
+    align-items: center; /* Opcional: Centrar el texto */
+    font-size: 30px;
+  }
 }
