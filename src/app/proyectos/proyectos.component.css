@@ -16,6 +16,7 @@
   box-shadow: 5px 5px 8px rgba(245, 73, 144, 1),
              -5px -5px 8px #272727;
   transition: 0.4s;
+  position: relative;
 }
 
 .card:hover {
@@ -63,3 +64,19 @@
   }
   
 }
+
+.tech-icons {
+  display: flex;  /* Cambiar a flex */
+  justify-content: flex-end;  /* Alinear a la derecha */
+  gap: 12px;  /* Espacio entre los iconos */
+  position: absolute;  /* Fijar a la parte inferior del card */
+  bottom: 20px;  /* Ajustar la distancia desde el fondo */
+  right: 20px;  /* Ajustar la distancia desde la derecha */
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
