@@ -1,28 +1,35 @@
-/* From Uiverse.io by Sashank02 */ 
-.titulo{
+/* Estilos generales */
+.titulo {
   text-align: center;
 }
-.cards{
+
+/* Contenedor de las tarjetas */
+.cards {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
+
+/* Estilo para cada tarjeta */
 .card {
   padding: 20px;
-  width: 330px;
-  min-height: 370px;
+  width: 400px;
+  min-height: 450px;
   border-radius: 20px;
   background: #212121;
-  box-shadow: 5px 5px 8px rgba(245, 73, 144, 1),
-             -5px -5px 8px #272727;
+  box-shadow: 5px 5px 8px rgba(245, 73, 144, 1), -5px -5px 8px #272727;
   transition: 0.4s;
   position: relative;
+  display: flex;
+  flex-direction: column;  /* Asegura que los elementos se apilen verticalmente */
 }
 
+/* Efecto hover de la tarjeta */
 .card:hover {
   translate: 0 -10px;
 }
 
+/* Título de la tarjeta */
 .card-title {
   font-size: 18px;
   font-weight: 600;
@@ -30,21 +37,82 @@
   margin: 15px 0 0 10px;
 }
 
+/* Imagen de la tarjeta */
 .card-image {
   min-height: 170px;
   background-color: #313131;
   border-radius: 15px;
   background: #313131;
-  box-shadow: inset 5px 5px 3px #2f2f2f,
-            inset -5px -5px 3px #333333;
+  box-shadow: inset 5px 5px 3px #2f2f2f, inset -5px -5px 3px #333333;
+  display: flex;  /* Asegura que se comporte como un contenedor flexible */
 }
 
+/* Ajuste de la imagen dentro del contenedor */
+.card-image img {
+  width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+  height: 100%;  /* Ajusta la altura al 100% del contenedor */
+  object-fit: cover;  /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+  border-radius: 15px;  /* Aplica el mismo border-radius a la imagen */
+}
+
+/* Cuerpo de la tarjeta */
 .card-body {
   margin: 13px 0 0 10px;
   color: rgb(184, 184, 184);
   font-size: 15px;
 }
 
+/* Iconos de tecnologías */
+.tech-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Tamaño de los iconos */
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Estilo para los botones de acciones */
+.card-actions {
+  margin-top: auto; /* Empuja los botones al final del contenedor */
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo para los botones */
+.btn-git, .btn-project {
+  background-color: rgba(245, 73, 144, 1); /* Color verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto hover en los botones */
+.btn-git:hover, .btn-project:hover {
+  background-color: rgb(216, 155, 180); /* Color al pasar el ratón */
+}
+
+.btn-git {
+  background-color: #333; /* Color oscuro para el botón de Git */
+}
+
+.btn-git:hover {
+  background-color: #555;
+}
+
+/* Estilo para la sección de pie de página */
 .footer {
   float: right;
   margin: 28px 0 0 18px;
@@ -52,31 +120,17 @@
   color: #b3b3b3;
 }
 
+/* Nombre de la persona */
 .by-name {
   font-weight: 700;
 }
 
+/* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-  .cards{
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
-  
-}
-
-.tech-icons {
-  display: flex;  /* Cambiar a flex */
-  justify-content: flex-end;  /* Alinear a la derecha */
-  gap: 12px;  /* Espacio entre los iconos */
-  position: absolute;  /* Fijar a la parte inferior del card */
-  bottom: 20px;  /* Ajustar la distancia desde el fondo */
-  right: 20px;  /* Ajustar la distancia desde la derecha */
-}
-
-.tech-icon {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
 }
 
