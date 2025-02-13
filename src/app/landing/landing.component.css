@@ -1,11 +1,9 @@
-body{
-  background-color: #101511;
-  color: white;
-}
 
 .global-container {
   display: flex; /* Flexbox para organizar las secciones en una columna */
   flex-direction: column; /* Las secciones se apilan de arriba hacia abajo */
+  background-color: #101511;
+  color: white;
 }
 
 .section {
