@@ -128,10 +128,61 @@
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .cards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; /* Apila las tarjetas verticalmente */
+    align-items: center; /* Centra las tarjetas en la pantalla */
     gap: 40px;
   }
+
+  .card {
+    width: 90%; /* Hace que las tarjetas ocupen el 90% del ancho de la pantalla */
+    max-width: 320px; /* Evita que se hagan demasiado grandes en pantallas medianas */
+    min-height: auto; /* Ajusta la altura automáticamente */
+   
+  }
+
+  .card-title {
+    font-size: 16px; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .card-body {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+  }
+
+  .tech-icons {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .btn-git, .btn-project {
+    padding: 8px 15px; /* Reduce el tamaño de los botones */
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 90%;
+      max-width: 350px;
+      gap: 30px; /* Más espacio entre elementos en móvil */
+    }
+  
+    .card-body {
+      font-size: 14px;
+
+    }
+  
+    .tech-icons {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+    }
+  
+    .btn-git,
+    .btn-project {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  
 }
 

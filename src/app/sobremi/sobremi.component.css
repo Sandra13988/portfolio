@@ -92,5 +92,9 @@
         align-items: center; /* Centra los botones */
         gap: 20px; /* Espaciado entre botones */
     }
+
+    .about-text{
+      padding: 15px;  
+    }
   }
   

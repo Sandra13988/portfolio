@@ -195,4 +195,8 @@
     align-items: center; /* Opcional: Centrar el texto */
     font-size: 30px;
   }
+
+  .inicio-container{
+    padding-top: 120px;
+  }
 }
