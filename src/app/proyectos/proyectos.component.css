@@ -130,7 +130,7 @@
   .cards {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     gap: 40px;
   }
 }
