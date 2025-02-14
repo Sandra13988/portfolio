@@ -59,3 +59,21 @@
     }
     
   }
+
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+
+  .card-top{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+  }
+
+  .card-top p{
+    font-size: 20px;
+  }
