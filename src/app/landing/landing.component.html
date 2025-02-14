@@ -24,12 +24,30 @@
     </button>
 
     <button class="button">
-      <a href="#contacto" routerLink="contacto" routerLinkActive="active">CONTACTO</a>
+      <a (click)="togglePopup()" >CONTACTO</a>
     </button>
   </div>
-  
-
 </div>
+
+<!-- Popup -->
+<div *ngIf="showPopup" class="popup">
+  <div class="popup-content">
+    <h2>Contactme!</h2>
+    <p>Estoy abierta a ofertas laborales y a proyectos de código abierto. Si es tu caso, no dudes en contactarme!! ❤️</p>
+    <h3>Correo:</h3>
+    <div class="email">
+      <span>{{ email }}</span>
+    </div>
+    <div class="content-boton">
+        <button (click)="copyToClipboard()" class="botones-popup">Copiar correo</button>
+        <button (click)="togglePopup()" class="botones-popup">Cerrar</button>
+    </div>
+    
+
+    <!-- Message when email is copied -->
+    <p *ngIf="copySuccess" class="success-message">{{ copySuccess }}</p>
+  </div>
+</div> 
 <div class="global-container">
   <div id="inicio" class="section">
     <app-inicio />
@@ -51,8 +69,8 @@
     <app-habilidades />
   </div>
 
-  <div id="contacto" class="section">
+  <!--<div id="contacto" class="section">
     <app-contacto />
-  </div>
+  </div>-->
 </div>
 
