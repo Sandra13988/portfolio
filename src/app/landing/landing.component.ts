@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [InicioComponent, SobremiComponent, ProyectosComponent, ExperienciaComponent,  HabilidadesComponent, CommonModule],
+  imports: [InicioComponent, SobremiComponent, ProyectosComponent, ExperienciaComponent, HabilidadesComponent, CommonModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
 })
