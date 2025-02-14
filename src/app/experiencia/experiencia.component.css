@@ -30,6 +30,7 @@ h1 {
 .experiencia-descripcion {
     width: 65%; /* Columna derecha */
     color: rgb(184, 184, 184);
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -42,6 +43,35 @@ h1 {
     .experiencia-descripcion {
         width: 100%;
     }
+}
+
+.icono-exp {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;     /* Centra la imagen verticalmente */
+    width: 100px;             /* Puedes ajustar el ancho según lo necesites */
+    height: 100px;            /* Puedes ajustar la altura según lo necesites */
+}
+
+@media (max-width: 768px) {
+    .experiencia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .experiencia-info, 
+    .experiencia-descripcion {
+        width: 100%;
+        padding-left: 0; /* Elimina el espacio extra */
+        text-align: left; /* Centrar contenido */
+    }
+
+    .experiencia-info p{
+        text-align: center;
+    }
+    
 }
 
 .icono-exp {
