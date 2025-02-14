@@ -4,3 +4,42 @@ h1 {
     text-align: center;
 }
 
+.experiencia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada experiencia */
+}
+
+.experiencia {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(245, 73, 144, 0.5);
+}
+
+.experiencia-info {
+    width: 30%; /* Columna izquierda */
+    font-weight: bold;
+    color: white;
+    padding-left: 50px;
+}
+
+.experiencia-descripcion {
+    width: 65%; /* Columna derecha */
+    color: rgb(184, 184, 184);
+}
+
+@media (max-width: 768px) {
+    .experiencia {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .experiencia-info, 
+    .experiencia-descripcion {
+        width: 100%;
+    }
+}
