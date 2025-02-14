@@ -43,3 +43,11 @@ h1 {
         width: 100%;
     }
 }
+
+.icono-exp {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;     /* Centra la imagen verticalmente */
+    width: 100px;             /* Puedes ajustar el ancho según lo necesites */
+    height: 100px;            /* Puedes ajustar la altura según lo necesites */
+}

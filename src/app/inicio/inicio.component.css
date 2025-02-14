@@ -175,8 +175,18 @@
 .complete-name h1 {
   white-space: nowrap; /* Evita el salto de línea en pantallas grandes */
   margin: 0;
-  -webkit-text-stroke: 1px rgba(245, 73, 144, 1); /* Borde del texto */
+  -webkit-text-stroke: 1px rgba(245, 73, 144, 0.7); /* Borde del texto con menos opacidad */
+  color: white; /* Color del texto */
+  
+  /* Efecto de borde neón difuso con menos intensidad */
+  text-shadow: 
+    0 0 3px rgba(245, 73, 144, 0.6),   /* Sombra más difusa y opaca */
+    0 0 6px rgba(245, 73, 144, 0.6), 
+    0 0 10px rgba(245, 73, 144, 0.5),
+    0 0 15px rgba(245, 73, 144, 0.4); /* Menos sombra */
 }
+
+
 
 @media (max-width: 600px) { /* Ajusta el tamaño según necesites */
   .complete-name {
