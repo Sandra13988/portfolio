@@ -24,7 +24,7 @@
     max-width: 1000px;
     font-size: 1.1rem;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
   }
   
@@ -95,6 +95,10 @@
 
     .about-text{
       padding: 15px;  
+    }
+
+    .section{
+      margin-bottom: 250px;
     }
   }
   

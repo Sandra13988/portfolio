@@ -197,6 +197,6 @@
   }
 
   .inicio-container{
-    padding-top: 120px;
+    margin-top: calc(60px + 2rem); /* Ajusta según la altura del header */
   }
 }
