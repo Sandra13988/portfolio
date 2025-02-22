@@ -6,7 +6,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    grid-template-rows: repeat(3, 1fr); /* Tres filas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Tres filas de igual tamaño */
     gap: 30px; /* Espacio entre los elementos de la cuadrícula */
   }
   
