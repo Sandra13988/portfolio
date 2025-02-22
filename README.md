@@ -19,7 +19,6 @@ Este es mi portafolio personal desarrollado con **Angular**, donde muestro mi ex
 - 🅰️ **Angular** → Framework principal.  
 - 🎨 **CSS / SCSS** → Diseño y estilos personalizados.  
 - ⚡ **TypeScript** → Para una mejor estructura y tipado.  
-- 📂 **Bootstrap / Tailwind (opcional)** → Para mejorar el diseño responsivo.  
 
 ## 🚀 Instalación y uso
 
